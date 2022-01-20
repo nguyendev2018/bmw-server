@@ -1,0 +1,94 @@
+.send {
+    &-container {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        grid-gap: 40px;
+    }
+    &-form {
+        background: #f5f6f6;
+        padding: 30px;
+        .form-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px;
+            margin-bottom: 30px;
+        }
+        .form-control {
+            padding: 10px 20px;
+            border: 1px solid #e1e6eb;
+            &:hover,
+            &:focus {
+                border-color: silver;
+            }
+        }
+        .submit {
+            background: $yellow-bold;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+            margin-top: 30px;
+        }
+    }
+    &-contact {
+        padding: 30px;
+        border: 1px solid #e1e6eb;
+        &>h2 {
+            margin-bottom: 13px;
+        }
+        &--list {
+            &__item {
+                margin-top: 30px;
+                .box-icon {
+                    width: 40px;
+                    height: 40px;
+                    background: $yellow-bold;
+                    color: white;
+                    display: flex;
+                    flex: 1;
+                    align-items: center;
+                    justify-content: center;
+                    float: left;
+                    margin-right: 20px;
+                }
+                .box-content {
+                    display: flex;
+                    flex-direction: column;
+                    h5 {
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 12px !important;
+                        line-height: 20px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        &--social {
+            border-top: 1px solid #e1e6eb;
+            padding-top: 20px;
+            margin-top: 20px;
+            &__list {
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background: $yellow_bold;
+                display: inline-block;
+                cursor: pointer;
+                transition: 0.4s;
+                transform: scale(1);
+                a {
+                    color: white;
+                }
+                &:hover {
+                    transform: scale(0.95);
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

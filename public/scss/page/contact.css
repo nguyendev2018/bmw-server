@@ -1,0 +1,11 @@
+.send {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 4fr;
+      grid-template-columns: 8fr 4fr;
+}
+
+.send-form .form-group .form-control {
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>BMW</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo/logo-header.png" />
+    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ANCHOR header -->
+    <!-- ANCHOR login -->
+    <div class="login general-body box-show" id="login">
+        <div class="general-body--left">
+        </div>
+        <div class="general-body--right">
+            <i class="fal fa-times btn-cancel"></i>
+            <h2>Sign in</h2>
+            <form action="">
+                <div class="input-item">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" class="input-control" placeholder="username">
+                </div>
+                <div class="input-item ">
+                    <i class="far fa-lock-alt icon"></i>
+                    <input type="password" class="input-control" placeholder="password">
+                </div>
+                <div class="form-check form-check-auth">
+                    <input class="form-check-input" type="checkbox" value="" id="remember me">
+                    <label class="form-check-label" for="remember me" style="font-size: 15px;">
+                        Remember me
+                    </label>
+                </div>
+                <a href="" class="forgot ">Forgot password ? </a>
+                <a href="" class="button-form">
+                    Sign in
+                </a>
+                <div class="form-bottom">
+                    <p class="text-center mt-3">Or join with</p>
+                    <ul class="list-icon">
+                        <li class="item-icon"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="item-icon"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="item-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <a href="" class="text-form">Sign up!</a>
+                    <span>Not a number yet? </span>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- ANCHOR register -->
+    <div class="register general-body box-show" id="register">
+        <div class="general-body--left">
+        </div>
+        <div class="general-body--right">
+            <i class="fal fa-times btn-cancel"></i>
+            <h2>Register </h2>
+            <form action="">
+                <div class="input-item">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" class="input-control" placeholder="Username">
+                </div>
+                <div class="input-item">
+                    <i class="fas fa-at icon"></i>
+                    <input type="email" class="input-control" placeholder="Email">
+                </div>
+                <div class="input-item ">
+                    <i class="far fa-lock-alt icon"></i>
+                    <input type="password" class="input-control" placeholder="Password">
+                </div>
+                <div class="input-item ">
+                    <i class="far fa-lock-alt icon"></i>
+                    <input type="password" class="input-control" placeholder="Re-password">
+                </div>
+                <a href="" class="button-form">
+                    Register
+                </a>
+            </form>
+        </div>
+    </div>
+    <!-- ANCHOR header -->
+    <div class="header">
+        <div class="header-text">
+            <div class="container">
+                <div class="header-left--desktop">
+                    <div class="header-left--desktop__social float-md-left ">
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                    <div class="header-left--desktop__call">
+                        Call for reservation: +011 29 345 678
+                    </div>
+                </div>
+                <div class="header-authentication">
+                    <span class="register pr-4 item-click" data-show="register">Register</span>
+                    <span class="login item-click" data-show="login">Login</span>
+                    <span class="icon-cart">
+                        <div class="info badge badge-light">4</div>
+                        <i class="fal fa-shopping-cart"></i>
+                    </span>
+                </div>
+                <!-- het container -->
+            </div>
+        </div>
+        <div class="header-menu ">
+            <div class="container container-flex">
+                <a href="" class="logo">
+                    <img src="images/logo/logo-header.png" alt="">
+                </a>
+                <div class="header-menu--list">
+                    <div class=" header-left button icon-bars">
+                        <span class="line fal fa-bars "></span>
+                    </div>
+                    <ul class="header-menu--list_item">
+                        <div class="box-close icon-bars">
+                            <i class="box-close--icon far fa-times"></i>
+                        </div>
+                        <a href="" class="logo">
+                            <img src="images/logo/logo-header.png" alt="">
+                        </a>
+                        <li class="item-first item-dropdown desktop">
+                            <a href=""> Home
+                            </a>
+                            <div class="box-icon">
+                                <i class="fal icon icon-down fa-chevron-down"></i>
+                                <i class="fal icon icon-up fa-chevron-up"></i>
+                            </div>
+                            <ul class="dropdown">
+                                <li class="item-second dropdown-hover item-dropdown ">
+                                    <div class="box-icon">
+                                        <i class="fal icon icon-down fa-chevron-down"></i>
+                                        <i class="fal icon icon-up fa-chevron-up"></i>
+                                    </div>
+                                    <a href="">
+                                        Home 1
+                                    </a>
+                                    <ul class="dropdown-second">
+                                        <li class="item-third dropdown-hover"><a href="">Home Children1</a></li>
+                                        <li class=" item-third dropdown-hover"><a href="">Home Children1</a></li>
+                                        <li class=" item-third dropdown-hover"><a href="">Home Children1</a></li>
+                                        <li class=" item-third dropdown-hover"><a href="">Home Children1</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-hover item-second">
+                                    <a href="">
+                                        Home 2
+                                    </a>
+                                    <ul class="dropdown-second">
+                                        <li class="item-third dropdown-hover"><a href="">Home Children2</a></li>
+                                        <li class="item-third dropdown-hover"><a href="">Home Children2</a></li>
+                                        <li class="item-third dropdown-hover"><a href="">Home Children2</a></li>
+                                        <li class="item-third dropdown-hover"><a href="">Home Children2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a href=""> Car <i class="fal icon fa-chevron-down"></i> </a></li>
+                        <li> <a href=""> Shop <i class="fal icon fa-chevron-down"></i> </a></li>
+                        <li> <a href=""> Gallery <i class="fal icon fa-chevron-down"></i> </a></li>
+                        <li> <a href=""> Blog <i class="fal icon fa-chevron-down"></i> </a></li>
+                        <li class="authentication"> <a href="../../login.html"><i class="icon fal fa-sign-in"></i>
+                                Login</a>
+                            <a href="../../register.html"><i class="icon fal fa-sign-out"></i>Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- hết header-top -->
+    <div class="layer-black"></div>
+    <!-- hết logo và menu -->
+
+    <!-- ANCHOR banner slide -->
+    <div class="banner">
+        <div class="banner-black"></div>
+        <div class="click-slide  click-slide--prev">
+            <i class="fal fa-chevron-left"></i>
+        </div>
+        <div class="click-slide click-slide--next ">
+            <i class="fal fa-chevron-right"></i>
+        </div>
+        <div class="banner-list">
+            <div class="banner-list--item item-1">
+            </div>
+            <div class="banner-list--item item-2">
+            </div>
+            <div class="banner-list--item item-3">
+            </div>
+        </div>
+    </div>
+    <!-- ANCHOR everything -->
+    <div class="bg-clip">
+        <div class="video-clip">
+            <!-- <video controls>
+                <source src="images/video/video-bmw.mp4" type="video/mp4">
+            </video> -->
+        </div>
+    </div>
+    <div class="everything content-padding ">
+        <div class="container">
+            <div class="everything-list">
+                <div class="everything-list--item">
+                    <h2>Everything you need to build an amazing dealership website.
+                    </h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer
+                    </p>
+                </div>
+                <div class="everything-list--item">
+                    <div class="video">
+                        <img src="images/banner/bmw3.png" alt="">
+                        <div class="video-play">
+                            <a class="video-play--btn">
+                                <i class="fa fa-play icon-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANCHOR product-details -->
+    <div class="product-banner">
+        <div class="product-details">
+            <span class="product-details--list active" data-filter="all">
+                All
+            </span>
+            <span class="product-details--list" data-filter="BMW 720i">
+                BMW 720i
+            </span>
+            <span class="product-details--list" data-filter="BMW 420i">
+                BMW 420i
+            </span>
+            <span class="product-details--list" data-filter="BMW 320i">
+                BMW 320i
+            </span>
+            <span class="product-details--list" data-filter="BMW 920i">
+                BMW 920i
+            </span>
+        </div>
+    </div>
+    <!-- ANCHOR product-details--item -->
+    <div class="product-details--item content-padding container">
+        <div class="box-item" data-item="BMW 720i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/1.jpg" alt="" class="img-100">
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 720i">
+            <a href="" class="box-img">
+                <img src="images/product-item/2.jpg" alt="" class="img-100">
+
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 720i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/3.jpg" alt="" class="img-100">
+
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 420i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/4.jpg" alt="" class="img-100">
+
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 420i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/1.jpg" alt="" class="img-100">
+
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 420i">
+            <a class="box-img">
+                <img src="images/product-item/3.jpg" alt="" class="img-100">
+                <div class="layer-black"></div>
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 320i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/4.jpg" alt="" class="img-100">
+
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 920i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/5.jpg" alt="" class="img-100">
+                <div class="layer-black"></div>
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+        <div class="box-item" data-item="BMW 920i">
+            <a hreaf="" class="box-img">
+                <img src="images/product-item/6.jpg" alt="" class="img-100">
+                <div class="layer-black"></div>
+
+            </a>
+            <div class="box-content">
+                <div class="box-content--top">
+                    <b class="box-content--name">
+                        BMW thế hệ mới công suất mới
+                    </b>
+                    <span class="box-content--number">$500</span>
+                </div>
+                <span class="box-content--text">BMW thiết kế toàn diện</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- end hot-news -->
+    <!-- ANCHOR Our Special Cars -->
+    <div class="slide-limit  ">
+        <div class="slide-limit--container container">
+            <h2> Our Special Cars</h2>
+            <div class="control-right ">
+                <i class="far fa-chevron-left"></i>
+            </div>
+            <div class="control-left">
+                <i class="far fa-chevron-right"></i>
+            </div>
+            <div class="multiple-items">
+
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+                <div class="slide-limit--list">
+                    <img src="images/slide anh/2.png" alt="">
+                    <span class="number">$100</span>
+                    <span class="name">Trio Sauce</span>
+                    <span class="name-sub">
+                        Mussel with tomato sauce, wine
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ANCHOR CEO  -->
+    <div class="content-padding ceo">
+        <div class="ceo-container container ">
+            <div>
+                <img src="images/chubmw/1.jpg " alt=" " class="name img-fluid">
+            </div>
+            <div>
+                <div class=" ceo-info ">
+                    <h2 class="font-oswarld ">
+                        Christopher Wehner
+                    </h2>
+                    <h3 class="font-dancing ">
+                        Information29 June 2018
+                    </h3>
+                    <p class="details">
+                        Oliver Zipse will assume the role of Chairman of the Board of Management of BMW AG effective on 16 August 2019. The company’s Supervisory Board made this decision today during its meeting in Spartanburg, South Carolina (USA). Zipse will succeed Harald
+                        Krüger, who informed the Chairman of the Supervisory Board at the beginning of July that he would not seek a second term of office.
+                    </p>
+                </div>
+
+                <div class="social ">
+                    <a href=" " class="social-icon "><i class="fab fa-facebook-f "></i></a>
+                    <a href=" " class="social-icon "><i class="fab fa-vimeo-v "></i></a>
+                    <a href=" " class="social-icon "><i class=" fab fa-pinterest "></i></a>
+                    <a href=" " class="social-icon "><i class=" fab fa-google-plus "></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ANCHOR slogan -->
+    <div class="slogan  " data--delay="0.2s">
+        <div class="container col-center text-center">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+            <h3 class=" font-dancing ">
+                BMW Happy Of Home
+            </h3>
+            <h4 class="">
+                BMW Luxury Car For Every Family
+            </h4>
+        </div>
+    </div>
+    <!-- ANCHOR founder -->
+    <div class="founder content-padding container  ">
+        <h2>Contact By Car</h2>
+        <p>Booking a table has never been so easy with free & instant online restaurant <br> reservations, booking now!
+        </p>
+        <p class="mt-5">Monday to Friday <span style="color: #feb518;"> 9:00 am - 23:00 pm </span> Saturday to Sunday
+            <span style="color: #feb518;">10:00 am - 22:00 pm </span> <br> Note: Arctica Restaurant is closed on holidays.
+        </p>
+        <span class="number">0844.335.1211</span>
+        <div class="border-top"></div>
+        <h2>Book Your Car Online</h2>
+        <div class="table-list">
+            <input type="text" class="table-list--item" placeholder="Your Name *">
+            <input type="email" class="table-list--item" placeholder="Your Email *">
+            <input type="number" class="table-list--item" placeholder="Mobile Number *">
+            <input type="date" class="table-list--item" placeholder="Date *">
+            <input type="time" class="table-list--item" placeholder="Time *">
+            <input type="text" class="table-list--item" placeholder="No. of Persons *">
+        </div>
+        <!-- ANCHOR comment -->
+        <div class="comment"></div>
+    </div>
+    <!-- hết phần phản hồi người dùng -->
+    <!-- ANCHOR blog -->
+    <div class="content-padding recent ">
+        <div class="container">
+            <div class="text-center">
+                <h2>Recent Blog</h2>
+                <p>There are many variations of passages of Lorem Ipsum typesetting industry has been the <br> industry's standard dummy text ever since the been when an unknown printer.
+                </p>
+            </div>
+            <div class="blog-list">
+                <div class="blog-list--item">
+                    <a href="" class="layer-img">
+                        <img src="images/blog/1.jpg" alt="" class="img-100">
+                    </a>
+                    <div class="layer-text">
+                        <div class="layer-text--top">
+                            <div class="">
+                                <i class="fas fa-calendar icon"></i>
+                                <span>July 26,2018</span>
+                            </div>
+                            <div class="">
+                                <i class="fas fa-user icon"></i>
+                                <span>By <span style="color: gray">26,2018</span> </span>
+                            </div>
+                        </div>
+                        <a href="" class="blog-title">
+                            Facts That You Should Know About Car Service.
+                            Facts That You Should Know About Car Service.
+                            Facts That You Should Know About Car Service.
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-list--item">
+                    <a href="" class="layer-img">
+                        <img src="images/blog/1.jpg" alt="" class="img-100">
+                    </a>
+                    <div class="layer-text">
+                        <div class="layer-text--top">
+                            <div class="">
+                                <i class="fas fa-calendar icon"></i>
+                                <span>July 26,2018</span>
+                            </div>
+                            <div class="">
+                                <i class="fas fa-user icon"></i>
+                                <span>By <span style="color: gray">26,2018</span> </span>
+                            </div>
+                        </div>
+                        <a href="" class="blog-title">
+                            Facts That You Should Know About Car Service.
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-list--item">
+                    <a href="" class="layer-img">
+                        <img src="images/blog/1.jpg" alt="" class="img-100">
+                    </a>
+                    <div class="layer-text">
+                        <div class="layer-text--top">
+                            <div class="">
+                                <i class="fas fa-calendar icon"></i>
+                                <span>July 26,2018</span>
+                            </div>
+                            <div class="">
+                                <i class="fas fa-user icon"></i>
+                                <span>By <span style="color: gray">26,2018</span> </span>
+                            </div>
+
+                        </div>
+
+                        <a href="" class="blog-title">
+                            Facts That You Should Know About Car Service.
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-list--item">
+                    <a href="" class="layer-img">
+                        <img src="images/blog/1.jpg" alt="" class="img-100">
+                    </a>
+                    <div class="layer-text">
+                        <div class="layer-text--top">
+                            <div class="">
+                                <i class="fas fa-calendar icon"></i>
+                                <span>July 26,2018</span>
+                            </div>
+                            <div class="">
+                                <i class="fas fa-user icon"></i>
+                                <span>By <span style="color: gray">26,2018</span> </span>
+                            </div>
+
+                        </div>
+
+                        <a href="" class="blog-title">
+                            Facts That You Should Know About Car Service.
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-list--item">
+                    <a href="" class="layer-img">
+                        <img src="images/blog/1.jpg" alt="" class="img-100">
+                    </a>
+                    <div class="layer-text">
+                        <div class="layer-text--top">
+                            <div class="">
+                                <i class="fas fa-calendar icon"></i>
+                                <span>July 26,2018</span>
+                            </div>
+                            <div class="">
+                                <i class="fas fa-user icon"></i>
+                                <span>By <span style="color: gray">26,2018</span> </span>
+                            </div>
+
+                        </div>
+
+                        <a href="" class="blog-title">
+                            Facts That You Should Know About Car Service.
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ANCHOR footer -->
+    <div class="footer wow fadeInUp" data-wow-delay="0.2s">
+        <div class="footer-container container">
+            <div class="info-contact">
+                <a href="" class="w-100 logo">
+                    <img src="../../images/logo/logo-header.png" alt="" title="logo BMW">
+                </a>
+                <p class="">Efficiency - Dynamic BMW. Reduce fuel consumption, increase driving feeling.increase driving feelingincrease driving feeling</p>
+                <div class="info-contact--list">
+                    <i class="far fa-address-book footer-icon"></i>
+                    <span>Q1, Nguyen Cu Trinh</span>
+                </div>
+                <div class="info-contact--list">
+                    <i class="fa fa-phone  footer-icon"></i>
+                    <span>03625555</span>
+                </div>
+                <div class="info-contact--list ">
+                    <i class="fa fa-envelope  footer-icon"></i>
+                    <span>nguyendev2018@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="  user-link">
+                <h2 class=" footer-title">User Link</h2>
+                <ul>
+                    <li><a href=""><i class="footer-icon far fa-hand-point-right"></i>About comapy</a></li>
+                    <li><a href=""><i class="footer-icon far fa-hand-point-right"></i>Reservation</a></li>
+                    <li><a href=""><i class=" footer-icon  far fa-hand-point-right"></i>Help center</a>
+                    </li>
+                    <li><a href=""><i class="footer-icon far fa-hand-point-right"></i>Our Blog</a></li>
+                    <li><a href=""><i class="footer-icon far fa-hand-point-right"></i>Carrers</a></li>
+                    <li><a href=""><i class="footer-icon far fa-hand-point-right"></i> Contact us</a></li>
+
+                </ul>
+            </div>
+            <div class=" list-car">
+                <h2 class=" footer-title ">Type of car</h2>
+                <div class=" list-car--item ">
+                    <div class="item-img">
+                        <a href="" class="overplay-link">
+                            <i class="far fa-link footer-icon"></i>
+                        </a>
+                        <img src="images/seri/1.jpg" alt="" class="img-100">
+                    </div>
+                    <div class=" item-name">
+                        <a href=""> 1 SERIES</a>
+                    </div>
+                </div>
+                <div class=" list-car--item ">
+                    <div class="item-img">
+                        <a href="" class="overplay-link">
+                            <i class="far fa-link footer-icon"></i>
+                        </a>
+                        <img src="images/seri/1.jpg" alt="" class="">
+                    </div>
+                    <div class=" item-name">
+                        <a href=""> 1 SERIES</a>
+                    </div>
+                </div>
+
+                <div class=" list-car--item ">
+                    <div class="item-img">
+                        <a href="" class="overplay-link">
+                            <i class="far fa-link footer-icon"></i>
+                        </a>
+                        <img src="images/seri/1.jpg" alt="" class="">
+                    </div>
+                    <div class=" item-name">
+                        <a href=""> 1 SERIES</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" open-hour">
+                <h2 class=" footer-title"> opening hours</h2>
+                <div class="open-hour--item">
+                    <div class="date"><i class="far fa-clock footer-icon"></i>Mon-Fri</div>
+                    <div class="float-right">
+                        9:00am - 23:00pm
+                    </div>
+                </div>
+                <div class="open-hour--item">
+                    <div class="date"><i class="far fa-clock footer-icon"></i>Mon-Fri</div>
+                    <div class="">
+                        9:00am - 23:00pm
+                    </div>
+                </div>
+                <div class="open-hour--item">
+                    <div class="date"><i class="far fa-clock footer-icon"></i>Mon-Fri</div>
+                    <div class="">
+                        9:00am - 2p3:00pm
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="scroll-up">
+        <i class="icon-up fal fa-arrow-up"></i>
+    </a>
+    <script type="module" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/slick.js"></script>
+    <script type="module" src="/js/font-awesome.js"></script>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/home.js"></script>
+    <script type="module">
+        $('.blog-list').slick({ infinite: true, arrows: false, slidesToShow: 3, slidesToScroll: 3, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 2, } }, { breakpoint: 567, settings: { slidesToShow: 1, } }] }); $('.banner-list').slick({ infinite:
+        true, slidesToShow: 1, slidesToScroll: 1, prevArrow: $('.click-slide--prev'), nextArrow: $('.click-slide--next'), }); $('.multiple-items').slick({ slidesToShow: 6, slidesToScroll: 3, prevArrow: $('.control-right '), nextArrow: $('.control-left'),
+        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 4, } }, { breakpoint: 567, settings: { slidesToShow: 3, } }] });
+    </script>
+</body>
+
+</html>
