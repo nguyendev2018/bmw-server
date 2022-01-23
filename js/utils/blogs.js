@@ -9,11 +9,12 @@ export async function renderBlogs() {
     data.forEach((itemData) => {
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
+
     })
 }
 export function createItemBlogs(itemData) {
     const htmls = `
-    <div class="blog-list--item" onclick="clickImg()">
+    <div class="blog-list--item">
     <a href="" class="layer-img" >
         <img src="${itemData.imgUrl}" alt="" class="img-100">
     </a>
@@ -35,8 +36,12 @@ export function createItemBlogs(itemData) {
     </div>
 </div>
     `
+
     return htmls;
 }
 export function clickImg() {
-    console.log('sdsd');
+    const blogList = document.querySelector('.blog-list--item');
+    blogList.addEventListener("click", (e) => {
+        console.log("dsd");
+    })
 }
