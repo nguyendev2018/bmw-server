@@ -1,8 +1,9 @@
 import axiosClient from "./axiosClient";
 const banners = {
-    getAllBanner(params) {
+    getAll(params) {
         const url = `./banners`;
         return axiosClient.get(url, ({ params }))
+
     }
 }
 export default banners;
