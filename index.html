@@ -295,19 +295,14 @@
     </a>
     <!-- <script type="module" src="/js/slick.js"></script> -->
 
-    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/jquery-3.6.0.min.js"></script>
     <script type="module" src="/js/font-awesome.js"></script>
 
     <script type="module" src="/js/main.js"></script>
     <script type="module" src="/js/home.js"></script>
     <script type="module" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(function() {
-                $("#import_header").load("./import/header.html");
-                $("#import_footer").load("./import/footer.html");
-            });
-        })
+    <script type="module">
+        $(document).ready(function () { $(function () { $("#import_header").load("./import/header.html"); $("#import_footer").load("./import/footer.html"); }); })
     </script>
 </body>
 
