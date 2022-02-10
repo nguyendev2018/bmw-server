@@ -22,7 +22,7 @@ async function renderSpecials() {
             slidesToScroll: 3,
             prevArrow: $('.control-right'),
             nextArrow: $('.control-left'),
-            responsive: [{ breakpoint: 1024, settings: { slidesToShow: 4, } }, { breakpoint: 567, settings: { slidesToShow: 3, } }]
+            responsive: [{ breakpoint: 1024, settings: { slidesToShow: 4, } }, { breakpoint: 567, settings: { slidesToShow: 3, } }, { breakpoint: 480, settings: { slidesToShow: 2, } }, { breakpoint: 360, settings: { slidesToShow: 1, } }, ]
         })
     } catch (error) {
         console.log(error);

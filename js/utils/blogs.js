@@ -4,25 +4,54 @@ import blogs from '../api/blogApi.js';
 dayjs.extend(relativeTime);
 
 export async function renderBlogs() {
-    const blogList = document.querySelector('.blog-list');
     const { data } = await blogs.getAll();
+    const blogList = document.querySelector('.blog-list');
     data.forEach((itemData) => {
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
 
-    })
+        clickImg(itemData);
+    });
+    $('.blog-list').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+
+            }
+        }, {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
 }
+
 export function createItemBlogs(itemData) {
     const htmls = `
     <div class="blog-list--item">
-    <a href="" class="layer-img" >
-        <img src="${itemData.imgUrl}" alt="" class="img-100">
-    </a>
+    <div class="layer-img" >
+        <img src="${itemData.imgUrl}"  title= " ${itemData.title}" alt="" class="img-100">
+    </div>
     <div class="layer-text">
         <div class="layer-text--top">
             <div class="">
                 <i class="fas fa-calendar icon"></i>
-                <span> ${dayjs(itemData.updateAt).fromNow()}
+                <span> ${dayjs(itemData.createdAt).format('DD/MM/YYYY')}
                 </span>
             </div>
             <div class="">
@@ -30,18 +59,18 @@ export function createItemBlogs(itemData) {
                 <span>By <span style="color: gray">${itemData.author}</span> </span>
             </div>
         </div>
-        <a href="" class="blog-title">
+        <div class="blog-title" title= " ${itemData.title}">
             ${itemData.title}
-        </a>
+        </div>
     </div>
 </div>
     `
-
     return htmls;
+
 }
-export function clickImg() {
+export function clickImg(itemData) {
     const blogList = document.querySelector('.blog-list--item');
-    blogList.addEventListener("click", (e) => {
-        console.log("dsd");
+    blogList.addEventListener("click", () => {
+        window.location.assign(`/blog-details.html?id=${itemData.id}`)
     })
 }
