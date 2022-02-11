@@ -17,13 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 });
-// let box_button = $(".box-button");
-// for (let i = 0; i < box_button.length; i++) {
-//     $(box_button[i]).on("click", function() {
-//         $(this).parent().find(".sub-menu").slideToggle();
-//         $(".icon-chevron").classList.toggle("active")
-//     });
-// }
 //ANCHOR js menu
 
 window.addEventListener("scroll", function() {
