@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
     $(".header-mobile li").on("click", function(e) {
         e.stopPropagation();
         var element = $(this);
