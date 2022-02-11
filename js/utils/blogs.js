@@ -38,6 +38,7 @@ async function renderBlogs(itemData) {
             }
         }]
     });
+
     return itemData;
 }
 
@@ -70,8 +71,11 @@ function createItemBlogs(itemData) {
 }
 
 function clickImg(itemData) {
-    const blogList = document.querySelector(".blog-list--item");
-    console.log(blogList);
+    const blogList = document.querySelectorAll(".blog-list--item");
+    console.log(itemData);
+    blogList.forEach(element => {
+        console.log(element);
+    });
 
 }
 renderBlogs()
