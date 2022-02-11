@@ -9,7 +9,6 @@ async function renderBlogs(itemData) {
         const blogList = document.querySelector('.blog-list');
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
-
     });
     // clickImg(itemData)
     $('.blog-list').slick({
@@ -71,14 +70,10 @@ function createItemBlogs(itemData) {
     return htmls
 }
 
-function clickImg(itemData) {
-    const blogList = document.querySelectorAll(".blog-list--item");
-    blogList.forEach(element => {
-        console.log(element);
-    });
-
+function goToDetail() {
+    console.log('sdsd');
 }
-
+goToDetail()
 
 renderBlogs()
 export default renderBlogs
