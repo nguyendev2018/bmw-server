@@ -2606,7 +2606,7 @@ video {
 }
 
 .product-banner {
-  background: url("../../images/product-details/banner.jpg");
+  background: url("../images/product-details/banner.jpg");
   background-size: cover;
   background-position: 100% 66%;
   height: 500px;
