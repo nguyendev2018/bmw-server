@@ -3,7 +3,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import blogs from '../api/blogApi.js';
 dayjs.extend(relativeTime);
 
-(async function renderBlogs() {
+async function renderBlogs() {
     const { data } = await blogs.getAll();
     const blogList = document.querySelector('.blog-list');
     data.forEach((itemData) => {
@@ -38,7 +38,7 @@ dayjs.extend(relativeTime);
             }
         }]
     });
-})()
+}
 
 function createItemBlogs(itemData) {
     const htmls = `
@@ -69,7 +69,8 @@ function createItemBlogs(itemData) {
 }
 
 function clickImg(itemData) {
-    const blogAll = document.querySelectorAll('.blog-list--item');
-    console.log(itemData.id);
-
+    const blogAll = createItemBlogs(itemData);
+    console.log(blogAll);
 }
+renderBlogs()
+export default renderBlogs
