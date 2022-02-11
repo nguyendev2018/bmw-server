@@ -555,7 +555,7 @@
                         9:00am - 23:00pm
                     </div>
                 </div>
-                <div class="open-hour--item">
+                <div class="open-hour--item" onblur="abc()">
                     <div class="date"><i class="far fa-clock footer-icon"></i>Mon-Fri</div>
                     <div class="">
                         9:00am - 2p3:00pm
@@ -574,7 +574,11 @@
     <script type="module" src="/js/home.js"></script>
 
     <script type="module" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script>
+        function goToDetail(id) {
+            window.location.assign(`/blog-details.html?id=${id}`);
+        }
+    </script>
 </body>
 
 </html>

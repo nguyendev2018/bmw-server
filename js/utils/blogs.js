@@ -42,10 +42,9 @@ async function renderBlogs(itemData) {
 
     return itemData;
 }
-
+// {/* <a href="blog-details.html?id=${itemData.id}"> */}
 function createItemBlogs(itemData) {
     const htmls = `
-    // <a href="blog-details.html?id=${itemData.id}">
     <div class="blog-list--item" onclick="goToDetail(${itemData.id})" >
     <div class="layer-img" >
         <img src="${itemData.imgUrl}"  title= " ${itemData.title}" alt="" class="img-100">
@@ -67,7 +66,7 @@ function createItemBlogs(itemData) {
         </div>
     </div>
 </div>
-// </a>
+
     `
     return htmls
 }
@@ -79,5 +78,7 @@ function clickImg(itemData) {
     });
 
 }
+
+
 renderBlogs()
 export default renderBlogs
