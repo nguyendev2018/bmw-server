@@ -44,7 +44,7 @@ async function renderBlogs(itemData) {
 
 function createItemBlogs(itemData) {
     const htmls = `
-    <div class="blog-list--item">
+    <div class="blog-list--item" onclick="clickImg()">
     <div class="layer-img" >
         <img src="${itemData.imgUrl}"  title= " ${itemData.title}" alt="" class="img-100">
     </div>
@@ -66,13 +66,11 @@ function createItemBlogs(itemData) {
     </div>
 </div>
     `
-    clickImg(itemData)
     return htmls
 }
 
 function clickImg(itemData) {
     const blogList = document.querySelectorAll(".blog-list--item");
-    console.log(itemData);
     blogList.forEach(element => {
         console.log(element);
     });
