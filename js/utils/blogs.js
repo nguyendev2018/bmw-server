@@ -9,8 +9,9 @@ async function renderBlogs(itemData) {
         const blogList = document.querySelector('.blog-list');
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
-    });
 
+    });
+    // clickImg(itemData)
     $('.blog-list').slick({
         infinite: true,
         slidesToShow: 3,
@@ -44,7 +45,8 @@ async function renderBlogs(itemData) {
 
 function createItemBlogs(itemData) {
     const htmls = `
-    <div class="blog-list--item" onclick="clickImg()">
+    // <a href="blog-details.html?id=${itemData.id}">
+    <div class="blog-list--item" onclick="goToDetail(${itemData.id})" >
     <div class="layer-img" >
         <img src="${itemData.imgUrl}"  title= " ${itemData.title}" alt="" class="img-100">
     </div>
@@ -65,6 +67,7 @@ function createItemBlogs(itemData) {
         </div>
     </div>
 </div>
+// </a>
     `
     return htmls
 }
