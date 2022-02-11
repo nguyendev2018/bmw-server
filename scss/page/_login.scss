@@ -16,7 +16,7 @@
         transform: translateX(-50%) translateY(-50%) scale(1);
     }
     &--left {
-        background-image: url("../../../images/login-register/login.jpg");
+        background-image: url("/images/login-register/login.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -143,7 +143,7 @@ a.forgot {
 .register {
     &.general-body {
         .general-body--left {
-            background-image: url("../../../images/login-register/register.jpg");
+            background-image: url("/images/login-register/register.jpg");
         }
     }
 }

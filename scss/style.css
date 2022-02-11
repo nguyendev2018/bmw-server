@@ -1955,7 +1955,7 @@ p {
 }
 
 .general-body--left {
-  background-image: url("../../../images/login-register/login.jpg");
+  background-image: url("/images/login-register/login.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2120,7 +2120,7 @@ a.forgot:hover {
 }
 
 .register.general-body .general-body--left {
-  background-image: url("../../../images/login-register/register.jpg");
+  background-image: url("/images/login-register/register.jpg");
 }
 
 @media screen and (max-width: 768px) {
