@@ -3,14 +3,13 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import blogs from '../api/blogApi.js';
 dayjs.extend(relativeTime);
 
-export async function renderBlogs() {
+(async function renderBlogs() {
     const { data } = await blogs.getAll();
     const blogList = document.querySelector('.blog-list');
     data.forEach((itemData) => {
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
-
-        clickImg(itemData);
+        clickImg(itemData)
     });
     $('.blog-list').slick({
         infinite: true,
@@ -39,9 +38,9 @@ export async function renderBlogs() {
             }
         }]
     });
-}
+})()
 
-export function createItemBlogs(itemData) {
+function createItemBlogs(itemData) {
     const htmls = `
     <div class="blog-list--item">
     <div class="layer-img" >
@@ -68,9 +67,9 @@ export function createItemBlogs(itemData) {
     return htmls;
 
 }
-export function clickImg(itemData) {
-    const blogList = document.querySelector('.blog-list--item');
-    blogList.addEventListener("click", () => {
-        window.location.assign(`/blog-details.html?id=${itemData.id}`)
-    })
+
+function clickImg(itemData) {
+    const blogAll = document.querySelectorAll('.blog-list--item');
+    console.log(itemData.id);
+
 }
