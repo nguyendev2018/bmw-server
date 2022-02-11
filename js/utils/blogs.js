@@ -2,16 +2,15 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import blogs from '../api/blogApi.js';
 dayjs.extend(relativeTime);
-async function renderBlogs() {
+async function renderBlogs(itemData) {
     const { data } = await blogs.getAll();
 
     data.forEach((itemData) => {
         const blogList = document.querySelector('.blog-list');
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
-        console.log(itemData);
     });
-    clickImg()
+
     $('.blog-list').slick({
         infinite: true,
         slidesToShow: 3,
@@ -39,10 +38,11 @@ async function renderBlogs() {
             }
         }]
     });
+    return itemData;
 }
 
 function createItemBlogs(itemData) {
-    return `
+    const htmls = `
     <div class="blog-list--item">
     <div class="layer-img" >
         <img src="${itemData.imgUrl}"  title= " ${itemData.title}" alt="" class="img-100">
@@ -65,17 +65,14 @@ function createItemBlogs(itemData) {
     </div>
 </div>
     `
-
+    clickImg(itemData)
+    return htmls
 }
 
-function clickImg() {
+function clickImg(itemData) {
+    const blogList = document.querySelector(".blog-list--item");
+    console.log(blogList);
 
-    const blogAll = document.querySelectorAll('.blog-list--item');
-
-    blogAll.forEach(element => {
-        console.log(element);
-
-    });
 }
 renderBlogs()
 export default renderBlogs
