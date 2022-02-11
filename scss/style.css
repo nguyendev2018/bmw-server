@@ -2871,6 +2871,10 @@ video {
   margin-right: 10px;
 }
 
+.blog-list--item .layer-text .layer-text--top .text {
+  color: gray;
+}
+
 .blog-list--item .blog-title {
   margin-top: 20px;
   font-size: 20px;

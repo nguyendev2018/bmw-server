@@ -41,9 +41,10 @@ async function renderBlogs(itemData) {
 
     return itemData;
 }
-// {/* <a href="blog-details.html?id=${itemData.id}"> */}
+// {/* */}
 function createItemBlogs(itemData) {
     const htmls = `
+    <a href="blog-details.html?id=${itemData.id}" data-id="${itemData.id}">
     <div class="blog-list--item" onclick="goToDetail(${itemData.id})" >
     <div class="layer-img" >
         <img src="${itemData.imgUrl}"  title= " ${itemData.title}" alt="" class="img-100">
@@ -52,12 +53,12 @@ function createItemBlogs(itemData) {
         <div class="layer-text--top">
             <div class="">
                 <i class="fas fa-calendar icon"></i>
-                <span> ${dayjs(itemData.createdAt).format('DD/MM/YYYY')}
+                <span class="text"> ${dayjs(itemData.createdAt).format('DD/MM/YYYY')}
                 </span>
             </div>
             <div class="">
                 <i class="fas fa-user icon"></i>
-                <span>By <span style="color: gray">${itemData.author}</span> </span>
+                <span  class="text">By <span >${itemData.author}</span> </span>
             </div>
         </div>
         <div class="blog-title" title= " ${itemData.title}">
@@ -65,15 +66,12 @@ function createItemBlogs(itemData) {
         </div>
     </div>
 </div>
-
+</a>
     `
     return htmls
 }
 
-function goToDetail() {
-    console.log('sdsd');
-}
-goToDetail()
+
 
 renderBlogs()
 export default renderBlogs
