@@ -70,7 +70,7 @@ function createItemBlogs(itemData) {
 
 function clickImg(itemData) {
     const blogAll = createItemBlogs(itemData);
-    console.log(blogAll);
+    blogAll.innerHtml
 }
 renderBlogs()
 export default renderBlogs
