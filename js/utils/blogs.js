@@ -4,9 +4,9 @@ import blogs from '../api/blogApi.js';
 dayjs.extend(relativeTime);
 async function renderBlogs(itemData) {
     const { data } = await blogs.getAll();
-
+    const blogList = document.querySelector('.blog-list');
     data.forEach((itemData) => {
-        const blogList = document.querySelector('.blog-list');
+
         const itemElement = createItemBlogs(itemData);
         blogList.insertAdjacentHTML('beforeend', itemElement);
     });
@@ -15,7 +15,9 @@ async function renderBlogs(itemData) {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        arrows: false,
+
+        prevArrow: $('.prev-blog'),
+        nextArrow: $('.next-blog'),
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -53,7 +55,7 @@ function createItemBlogs(itemData) {
         <div class="layer-text--top">
             <div class="">
                 <i class="fas fa-calendar icon"></i>
-                <span class="text"> ${dayjs(itemData.createdAt).format('DD/MM/YYYY')}
+                <span class="text"> ${dayjs(itemData.updateAt).format('DD/MM/YYYY')}
                 </span>
             </div>
             <div class="">
@@ -71,7 +73,4 @@ function createItemBlogs(itemData) {
     return htmls
 }
 
-
-
-renderBlogs()
-export default renderBlogs
+export default renderBlogs()
