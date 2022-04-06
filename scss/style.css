@@ -319,9 +319,7 @@ p {
           align-items: center;
 }
 
-.header-menu--list_item .item-first:hover > a,
-.header-menu--list_item .item-second:hover > a,
-.header-menu--list_item .item-third:hover > a {
+.header-menu--list_item .color-hover:hover > a {
   color: #feb518;
 }
 

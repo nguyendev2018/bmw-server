@@ -91,7 +91,7 @@
             align-items: center;
             //hover
           .color-hover{
-              &:hover{
+              &:hover>a{
                 color: #feb518;
               }
           }
