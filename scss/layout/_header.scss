@@ -90,13 +90,11 @@
             display: flex;
             align-items: center;
             //hover
-            .item-first,
-            .item-second,
-            .item-third {
-                &:hover>a {
-                    color: #feb518;
-                }
-            }
+          .color-hover{
+              &:hover{
+                color: #feb518;
+              }
+          }
             .item-dropdown {
                 &.desktop {
                     &:hover .icon {
