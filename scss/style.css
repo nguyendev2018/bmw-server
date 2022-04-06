@@ -2150,6 +2150,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .font-oswarld {
   font-family: "Oswald", sans-serif;
 }
@@ -2998,8 +3002,8 @@ video {
     padding-bottom: 15px;
   }
   .header-menu--list_item .item-first .box-icon {
-    width: 34px;
-    height: 30px;
+    width: 35px;
+    height: 31px;
     border: 1px solid #726e6e;
     display: block;
     cursor: pointer;
@@ -3056,7 +3060,7 @@ video {
     padding-left: 100px !important;
   }
   .header-menu--list_item .dropdown-hover:last-child {
-    margin-bottom: -15px;
+    border-bottom: none;
   }
   .header-menu--list_item .logo,
   .header-menu--list_item .box-close {

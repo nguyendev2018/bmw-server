@@ -12,7 +12,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+.overflow{
+    overflow: hidden;
+}
 .font-oswarld {
     font-family: "Oswald", sans-serif;
 }
@@ -712,8 +714,8 @@ video {
                             padding-bottom: 15px;
                         }
                         .box-icon {
-                            width: 34px;
-                            height: 30px;
+                            width: 35px;
+                            height: 31px;
                             border: 1px solid #726e6e;
                             display: block;
                             cursor: pointer;
@@ -758,9 +760,9 @@ video {
                         a {
                             padding-left: 100px !important;
                         }
-                        &:last-child {
-                            margin-bottom: -15px;
-                        }
+                       &:last-child{
+                           border-bottom: none;
+                       }
                     }
                     .logo,
                     .box-close {
