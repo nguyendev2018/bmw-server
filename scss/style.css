@@ -394,15 +394,15 @@ p {
   padding-right: 0;
 }
 
-.header-menu--list_item .item-first.desktop:hover .dropdown {
+.header-menu--list_item .item-first.resize:hover .dropdown {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
   visibility: visible;
 }
 
-.header-menu--list_item .item-first.desktop .dropdown,
-.header-menu--list_item .item-first.desktop .dropdown-second {
+.header-menu--list_item .item-first.resize .dropdown,
+.header-menu--list_item .item-first.resize .dropdown-second {
   opacity: 0;
   visibility: hidden;
 }
