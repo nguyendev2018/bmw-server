@@ -697,11 +697,19 @@ video {
                     .item-first {
                         width: 100%;
                         text-align: center;
-                        padding-top: 15px;
-                        padding-bottom: 15px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
                         padding-right: 0;
+                        &.resize{
+                            .dropdown,.dropdown-second{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
                         &>a {
                             padding-right: 0;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
                         }
                         .box-icon {
                             width: 34px;
