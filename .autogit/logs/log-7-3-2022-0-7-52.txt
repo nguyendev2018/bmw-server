@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Thu Apr 07 2022 00:07:52 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* index.html
+* js/index.js
+* scss/style.css
+* scss/style.css.map
+* scss/style.scss
+
+
+Created files:
+* .autogit/logs/log-6-3-2022-23-37-45.txt
+
+
+Deleted files:
+
+
+Renamed files:
