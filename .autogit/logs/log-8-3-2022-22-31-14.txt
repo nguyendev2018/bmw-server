@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Apr 08 2022 22:31:14 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* login.html
+
+
+Created files:
+* .autogit/logs/log-7-3-2022-16-36-56.txt
+
+
+Deleted files:
+
+
+Renamed files:
